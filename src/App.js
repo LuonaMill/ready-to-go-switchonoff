@@ -12,93 +12,22 @@ const App = () => {
       <section className="switchAndGoNoGo">
         <section className="onOff">
           <div className="first">
-            {switch1 === false && (
-              <div>
-                <button
-                  className={switch1 ? "purple" : ""}
-                  onClick={() => {
-                    setSwitch1(!switch1);
-                  }}
-                >
-                  ON
-                </button>
-                <button className="purple">OFF</button>
-              </div>
-            )}
-            {switch1 === true && switch2 === false ? (
-              <div>
-                <button
-                  onClick={() => {
-                    setSwitch1(switch1);
-                  }}
-                >
-                  ON
-                </button>
-                <button
-                  onClick={() => {
-                    setSwitch2(!switch2);
-                  }}
-                >
-                  OFF
-                </button>
-              </div>
-            ) : (
-              <div>
-                <button
-                  onClick={() => {
-                    setSwitch1(!switch1);
-                  }}
-                >
-                  ON
-                </button>
-                <button
-                  onClick={() => {
-                    setSwitch2(switch2);
-                  }}
-                >
-                  OFF
-                </button>
-              </div>
-            )}
-            {/* {switch1 === false ? (
-              <div>
-                <button
-                  className={switch1 ? "purple" : ""}
-                  onClick={() => {
-                    setSwitch1(!switch1);
-                  }}
-                >
-                  On
-                </button>
-                <button
-                  className={switch2 ? "" : "purple"}
-                  onClick={() => {
-                    setSwitch2(!switch2);
-                  }}
-                >
-                  Off
-                </button>
-              </div>
-            ) : (
-              <div>
-                <button
-                  className={switch1 ? "purple" : ""}
-                  onClick={() => {
-                    setSwitch1(!switch1);
-                  }}
-                >
-                  On
-                </button>
-                <button
-                  className={switch2 ? "purple" : ""}
-                  onClick={() => {
-                    setSwitch2(!switch2);
-                  }}
-                >
-                  Off
-                </button>
-              </div>
-            )} */}
+            <button
+              className={switch1 ? "purple" : ""}
+              onClick={() => {
+                setSwitch1(!switch1);
+              }}
+            >
+              ON
+            </button>
+            <button
+              onClick={() => {
+                setSwitch1(!switch1);
+              }}
+              className="purple"
+            >
+              OFF
+            </button>
           </div>
           <div className="second"></div>
           <div className="third"></div>
