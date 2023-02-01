@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", "sans-serif";
+  box-sizing: border-box;
+  /* display: flex;
+  justify-content: center;
+  align-items: space-between; */
+  /* background-color: grey; */
+}
+
+header {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 48px;
+  padding-left: 60px;
+  /* background-color: red; */
+  border-bottom: rgb(243, 234, 234) solid 2px;
+}
+
+header img {
+  height: 80px;
+  width: 100px;
+}
+
+.switchAndGoNoGo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px;
+}
+
+section .onOff {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.first,
+.second,
+.third {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  height: 70px;
+  width: 120px;
+  font-size: 36px;
+  color: rgb(92, 71, 211);
+  border-radius: 4px;
+  border: none;
+}
+
 .purple {
   background-color: rgb(92, 71, 211);
+  color: white;
+}
+
+.goNogo div {
+  height: 145px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 48px;
+}
+
+.go {
+  background-color: #46ac4a;
+}
+
+.noway {
+  background-color: #d34848;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
